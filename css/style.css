@@ -472,12 +472,20 @@ body {
     margin-bottom: 16px;
 }
 
+.post-button--share {
+    position: relative;
+}
+
 .popover_menu {
     display: none;
     position: absolute;
-    z-index: 200;
-    top: 89%;
-    right: 33%;
+    z-index: 20;
+    top: -210px;
+    right: -120%;
+}
+
+.menu_active {
+    display: block;
 }
 
 .share__items {
@@ -837,6 +845,10 @@ body {
     }
     
     .button-text {
+        display: none;
+    }
+
+    .post-button-text {
         display: none;
     }
 }
