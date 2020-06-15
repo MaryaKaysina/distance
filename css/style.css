@@ -241,6 +241,25 @@ body {
     margin-top: 0;
 }
 
+.see_more {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+
+    cursor: pointer;
+}
+
+.see_more-icon {
+    fill: #BFBFBF;
+    margin: 0 8px 0 5px;
+}
+
+.see_more {
+    color: #1890FF;
+    font-size: 14px;
+    line-height: 22px;
+}
+
 .main-feed {
     margin-top: 18px;
     max-width: 588px;
@@ -314,6 +333,8 @@ body {
     display: flex;
     align-items: center;
     margin-right: 8px;
+
+    cursor: pointer;
 }
 
 .tag-icon {
@@ -334,6 +355,7 @@ body {
     margin-bottom: 16px;
 }
 
+.your-page-button,
 .post-header-button {
     background-color: #fff;
     border: none;
@@ -429,6 +451,7 @@ body {
     align-items: center;
 }
 
+.your-page-icon,
 .post-button-icon {
     fill: #595959;
 }
@@ -449,10 +472,45 @@ body {
     margin-bottom: 16px;
 }
 
+.popover_menu {
+    display: none;
+    position: absolute;
+    z-index: 200;
+    top: 89%;
+    right: 33%;
+}
+
+.share__items {
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 210px;
+    height: 200px;
+
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.share__items--link {
+    padding: 2.5px 0 2.5px 0;
+    padding-top: 5px;
+    width: 100%;
+    text-align: left;
+    text-decoration: none;
+
+    font-size: 14px;
+    line-height: 22px;
+    color: #595959;
+}
+
 .right-sadebar {
     width: 408px;
 }
 
+.your-page,
 .stories {
     background: #FFFFFF;
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
@@ -472,6 +530,7 @@ body {
     display: flex;
 }
 
+.your-page-header,
 .stories-header {
     display: flex;
     justify-content: space-between;
@@ -517,6 +576,7 @@ body {
     margin-left: 4px;
 }
 
+.your-page-item,
 .story-item,
 .story-item-add {
     display: flex;
@@ -595,6 +655,114 @@ body {
     border: 1px solid #1890FF;
 }
 
+.your-page {
+    padding: 9px 16px 16px 16px;
+}
+
+.your-page-header {
+    margin: 0;
+    margin-right: -16px;
+    margin-left: -16px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.your-page-title {
+    color: #595959;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    margin: 0 16px;
+}
+
+.your-page-button {
+    margin: 0 16px;
+}
+
+.your-page-header::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-top: 9px;
+    margin-bottom: 16px;
+    background-color: #D9D9D9;
+}
+
+.your-pages__info {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.your-pages__text {
+    color: #8C8C8C;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 4px;
+}
+
+.your-page-item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.your-page-item::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    margin-top: 9px;
+    background-color: #D9D9D9;
+    margin-top: 23px;
+}
+
+.your-page__buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.your-page__btn {
+    width: 33.3333%;
+    font-size: 16px;
+    line-height: 24px;
+    color: #595959;
+    background-color: #fff;
+    border: 1px solid #D9D9D9;
+    padding: 8px 16px;
+    border-radius: 5%;
+}
+
+.your-page__btn:hover {
+    color: #1890FF;
+    border-color: #1890FF;
+}
+
+.your-page__footer {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.your-page__num {
+    width: 100%;
+    margin-top: 16px;
+
+    color: #262626;
+    font-size: 24px;
+    line-height: 32px;
+    margin-left: 4px;
+}
+
+.your-page__count {
+    width: 100%;
+    margin-top: 8px;
+
+    color: #8C8C8C;
+    font-size: 14px;
+    line-height: 22px;
+    margin-left: 4px;
+}
+
+
 @media (max-width: 1250px) {
     .container {
         justify-content: flex-start;
@@ -658,7 +826,17 @@ body {
         display: none;
     }
     .navigation {
-        justify-content: right;
+        justify-content: flex-end;
         padding-right: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    .create-post-footer {
+        justify-content: space-around;
+    }
+    
+    .button-text {
+        display: none;
     }
 }
