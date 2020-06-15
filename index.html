@@ -141,7 +141,16 @@
                 </svg>
                 <span class="nav-text">Games</span>
             </a>
+
+            <div class="see_more">
+                <svg class="see_more-icon" width="11" height="6.5">
+                    <use xlink:href="img/icons.svg#dropdown"></use>
+                </svg>
+                <span class="see_more">See more...</span>
+            </div>
+
         </nav><!-- /.nav-group -->
+
     </div><!-- /.menu-sidebar -->
 
     <div class="main-feed">
@@ -228,12 +237,24 @@
                     </svg>
                     <span class="post-button-text">Comment</span>
                 </button>
-                <button class="post-button">
+                <button class="post-button post-button--share">
                     <svg class="post-button-icon" width="24" height="24">
                         <use xlink:href="img/icons.svg#share"></use>
                     </svg>
                     <span class="post-button-text">Share</span>
                 </button>
+
+                <div class="popover_menu">
+                    <div class="share__items">
+                        <a href="#" class="share__items--link">Share Now (Only me)</a>
+                        <a href="#" class="share__items--link">Share...</a>
+                        <a href="#" class="share__items--link">Send as Message</a>
+                        <a href="#" class="share__items--link">Share in a group</a>
+                        <a href="#" class="share__items--link">Share on a Friend’s Timeline</a>
+                        <a href="#" class="share__items--link">Share to a Page</a>
+                    </div>
+                </div>
+
             </div><!-- /.post-footer -->
         </div><!-- /.post -->
 
@@ -333,7 +354,14 @@
                     <span class="story-title">Ant Design</span>
                     <span class="story-text">6 hours ago</span>
                 </div>
+                
             </a> <!-- /.story-item -->
+            <div class="see_more">
+                <svg class="see_more-icon" width="11" height="6.5">
+                    <use xlink:href="img/icons.svg#dropdown"></use>
+                </svg>
+                <span class="see_more">See more...</span>
+            </div>
         </div><!-- /.stories -->
 
         <div class="bday">
@@ -345,8 +373,47 @@
                     <span class="bday-title">John Doe</span>
                     <span class="bday-text">’s birthday is today</span>
                 </div>
-            </a> <!-- /.story-item -->
-        </div><!-- /.stories -->
+            </a> <!-- /.bday-item -->
+        </div><!-- /.bday -->
+
+        <div class="your-page">
+            <div class="your-page-header">
+                <h4 class="your-page-title">Your page</h4>
+                <button class="your-page-button">
+                    <svg class="your-page-icon" width="16" height="4">
+                        <use xlink:href="img/icons.svg#points"></use>
+                    </svg>
+                </button>
+            </div><!-- /.story-header -->
+
+            <a href="#" class="your-page-item">
+                <div class="story-image concuria"></div>
+                <div class="story-item-text">
+                    <span class="story-title">Concuria</span>
+                    <div class="your-pages__info">
+                        <svg class="your-pages-icon" width="16" height="16">
+                            <use xlink:href="img/icons.svg#chat"></use>
+                        </svg>
+                        <span class="your-pages__text">Messages</span>
+                    </div>
+                    <div class="your-pages__info">
+                        <svg class="your-pages-icon" width="16" height="16">
+                            <use xlink:href="img/icons.svg#bell"></use>
+                        </svg>
+                        <span class="your-pages__text">Notifications</span>
+                    </div>
+                </div>
+            </a> <!-- /.your-page-item -->
+            <div class="your-page__buttons">
+                <button class="your-page__btn">Likes</button>
+                <button class="your-page__btn">Views</button>
+                <button class="your-page__btn">Posts</button>
+            </div>
+            <div class="your-page__footer">
+                <span class="your-page__num">262</span>
+                <span class="your-page__count">5 likes this week</span>
+            </div>
+        </div><!-- /.your-page -->
 
     </div><!-- /.right-sadebar -->
 
