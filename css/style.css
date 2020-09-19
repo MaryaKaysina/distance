@@ -219,7 +219,7 @@ body {
     line-height: 22px;
 }
 
-.nav-link.active {
+.nav-link:hover {
     background: #FFFFFF;
     border-radius: 4px;
     color: #262626;
@@ -307,6 +307,7 @@ body {
     word-wrap: break-word;
     overflow-x: hidden;
     overflow-y: auto;
+    min-height: 32px;
 }
 
 .create-post-footer {
@@ -449,6 +450,7 @@ body {
     border: none;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .your-page-icon,
